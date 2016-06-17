@@ -1,3 +1,5 @@
+# Markdown with References
+
 If, like me, you find yourself writing large academic papers, then your choice of writing tool and methods of integrating references are of primary importance. For large papers, my tool of choice is [Scrivener](https://www.literatureandlatte.com/scrivener.php); I love the way it seemlessly breaks a document into smaller, more manageable, sections. And for referencing, I use [Zotero](https://www.zotero.org/) and it's fantastic [Firefox](https://www.mozilla.org/en-GB/firefox/new/) plugin. The problem was then how to integrate the two. 
 
 The most well-documented method of integrating Scrivener and Zotero involves using [OpenOffice](https://www.openoffice.org/) or [LibreOffice](https://www.libreoffice.org/) and the scannable cite option from within Zotero - [Here's one such example](http://thedigitalresearcher.com/how-to-use-zotero-with-scrivener/). 
