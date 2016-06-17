@@ -4,24 +4,24 @@ If you find yourself writing lots of academic papers, then it's important you us
 
 ## A Brief Aside - Integrating Scrivener and Zotero
 
-For large papers or novels (such as [My Abi](https://glowkeeper.gitbooks.io/my-abi/content/)), I use [Scrivener](https://www.literatureandlatte.com/scrivener.php) as my word processor together with [Zotero](https://www.zotero.org/) as my reference manager. The most well-documented method of integrating Scrivener and Zotero uses [OpenOffice](https://www.openoffice.org/) or [LibreOffice](https://www.libreoffice.org/) and the _scannable cite_ option within Zotero - [here's one such example of doing it that way](http://thedigitalresearcher.com/how-to-use-zotero-with-scrivener/). 
+For large works, such as [My Abi](https://glowkeeper.gitbooks.io/my-abi/content/), I use [Scrivener](https://www.literatureandlatte.com/scrivener.php) as my word processor, together with [Zotero](https://www.zotero.org/) as my reference manager. The most well-documented method of integrating Scrivener and Zotero uses [OpenOffice](https://www.openoffice.org/) or [LibreOffice](https://www.libreoffice.org/) and the _scannable cite_ option within Zotero - [here's one such example of doing it that way](http://thedigitalresearcher.com/how-to-use-zotero-with-scrivener/). 
 
-However, I prefer to avoid having to open an addional Word Processor package, so I use another method for integrating Scrivener and Zotero, which I outline below.
+However, I prefer to avoid having to open an additional Word Processor package, so I use another method for integrating Scrivener and Zotero, which I outline below.
 
-## My Method
-
-My method does, however, have other dependencies, aside from a Word Processor package. Not least of which is being comfortable using a command line. Additionally, I have only used this method on a Mac. It will certainly work on Linux, and it probably works on Windows too, but I don't work on such systems, so I cannot vouch for them. 
-
-### Method Overview
+## An Overview of My Method
 
 The method I am going to outline uses [Markdown](https://daringfireball.net/projects/markdown/), together with [BibTeX](http://www.bibtex.org/) formatted references, to produce beautiful LaTex inspired PDFs. I like Markdown's minimalist style because it allows me to concentrate on content without worying too much about presentation, at least while I'm busy writing.
 
 Furthermore, because the source documents I create are text files, they are perfect for version control on [GitHub](https://github.com/). That also means they are amenable to collaboration through branching, diff'ing and merging.
 
+As a small note of caution - I have only used this method on a Mac. It will certainly work on Linux, and it probably works on Windows too, but I rarely work on such systems (at least, not for writing), so I cannot vouch for them. 
+
 
 ### Dependencies
 
-Below is a list of tools you'll need:
+Although I avoid having to use two word processing tools, my method does other dependencies. Not least of which is being comfortable using a command line. 
+
+The tools you'll need:
 
 1. A Markdown Editor. [Scrivener](https://www.literatureandlatte.com/scrivener.php) is great for breaking big documents into smaller, more manageable, sections. I format my Scrivener documents as Markdown using the [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) package - here are [instructions for setting that up](http://thaddeushunt.com/tips-setting-up-scrivener-to-compile-multimarkdown/). For shorter works, I use the fuss free [Sublime Text](https://www.sublimetext.com/) editor together with the [Markdown Editing](https://github.com/SublimeText-Markdown/MarkdownEditing) package. 
 2. A reference manager that can output [BibTeX](http://www.bibtex.org/). I use [Zotero](https://www.zotero.org/). It works best with [Firefox](https://www.mozilla.org/en-GB/firefox/new/) and [Firefox's Zotero plugin](https://download.zotero.org/extension/zotero-4.0.29.10.xpi). Additionally, I use Zotero's [Better BibText](https://github.com/retorquere/zotero-better-bibtex) plugin, primarily because that helps avoid citation key clashes. 
