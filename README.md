@@ -47,7 +47,7 @@ _Here's the terrifying truth: there are already enough known fossil fuel reserve
 
 ...note the citation key _@bill_mckibben_global_2012_.
 
-Then, when you finish your document _renewables.md_, you export, into the same directory as your markdown file, your Zotero library in _Better BibTeX_ format. Call it, for example, _library.bib_. Make sure your CSL file, for example, _ieee-with-url.csl_, is also in that directory. Finally, create a _meta file_, for example _meta.txt_, that contains your paper's title, the author(s), the header and the footer. Here's my _meta.txt_:
+Then, when you finish your document _renewables.md_, you export, into the same directory, your Zotero library in _Better BibTeX_ format. Call it, for example, _library.bib_. Make sure your CSL file is also in that directory. Finally, create a _meta file_, _meta.txt_, that contains your paper's title, the author(s), the header and the footer. Here's my _meta.txt_:
 
 ---<br>
 title: Only Oil Executives and Their Friends in Government Believe Fracking is a Good Energy Option<br>
@@ -69,7 +69,7 @@ Finally, to produce the fully referenced PDF, run the following command:
 
 _pandoc --normalize --toc --metadata link-citations=true --filter pandoc-citeproc -V documentclass=report "meta.txt" "renewables.md" --biblio "library.bib" --csl "ieee-with-url.csl" --latex-engine=xelatex -s -S -o "renewables.pdf"_
 
-..._renewables.pdf_ should be a beautifully formatted PDF, complete with a table of contents, that contains the following text and reference:
+...the output should be _renewables.pdf_, a beautifully formatted PDF, complete with a table of contents. It will contain the following text and reference:
 
 _Here's the terrifying truth: there are already enough known fossil fuel reserves to fry Planet Earth five times over <sup>1</sup>._
 
