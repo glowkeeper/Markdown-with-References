@@ -26,7 +26,7 @@ The tools you'll need:
 1. A Markdown Editor. [Scrivener](https://www.literatureandlatte.com/scrivener.php) is great for breaking big documents into smaller, more manageable, sections. I format my Scrivener documents as Markdown using the [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) package - here are [instructions for setting that up](http://thaddeushunt.com/tips-setting-up-scrivener-to-compile-multimarkdown/). For shorter works, I use the fuss free [Sublime Text](https://www.sublimetext.com/) editor together with the [Markdown Editing](https://github.com/SublimeText-Markdown/MarkdownEditing) package. 
 2. A reference manager that can output [BibTeX](http://www.bibtex.org/). I use [Zotero](https://www.zotero.org/). It works best with [Firefox](https://www.mozilla.org/en-GB/firefox/new/) and [Firefox's Zotero plugin](https://download.zotero.org/extension/zotero-4.0.29.10.xpi). Additionally, I use Zotero's [Better BibText](https://github.com/retorquere/zotero-better-bibtex) plugin, primarily because that helps avoid citation key clashes. 
 3. Install the swiss army knife of text formatting tools - [Pandoc](http://pandoc.org/). Pandoc is a fabulous, if somewhat complex, tool. You can get it to produce just about anything - PDFs, Word documents, and it can even turn Markdown into beautiful [reveal.js](https://github.com/hakimel/reveal.js/) inspired presentations. I won't document such uses here, but if you want to do such things, here's a link to the [documentation](http://pandoc.org/README.html).
-4. A [Citation Style Language](http://citationstyles.org/) file that matches the citation style you need. The [Zotero Style Repository](https://www.zotero.org/styles) has many such files. I have to prodce IEEE citations most often, so I use the file [IEEE with URL](https://www.zotero.org/styles/ieee-with-url).
+4. A [Citation Style Language](http://citationstyles.org/) file that matches the citation style you need. The [Zotero Style Repository](https://www.zotero.org/styles) has many such files. I often have to produce IEEE citations, for which I use the file [IEEE with URL](https://www.zotero.org/styles/ieee-with-url).
 5. A LaTex processor. The [BasicTex](http://www.tug.org/mactex/morepackages.html) package will suffice. 
 
 
@@ -38,13 +38,13 @@ The tools you'll need:
 
 ### Workflow
 
-Let's imagine you have to produce a paper for a conference on renewable energy. Your paper is entitled **Only Oil Executives and Their Friends in Government Believe Fracking is a Good Energy Option**.  You want to open your paper with great impact, and you find an article by [Bill McKibben](http://www.billmckibben.com/) in the [Rolling Stone](http://www.rollingstone.com/), which outlines the mathematical case for keeping fossil fuels in the ground. That's just the impact you were looking for, so you save that article to Zotero, and then open your paper with the following statement:
+Let's imagine you have to produce a paper for a conference on renewable energy. Your article is entitled **Only Oil Executives and Their Friends in Government Believe Fracking is a Good Energy Option**.  You want to open with high impact, and you find a piece by [Bill McKibben](http://www.billmckibben.com/) in the [Rolling Stone](http://www.rollingstone.com/), which outlines the scientific case for keeping fossil fuels in the ground. That's just the impact you were looking for, so you save that article to Zotero, and then open your paper with the following statement:
 
-_Here's the terryfying truth: there are already enough known fossil fuel reserves to fry planet earth five times over._
+_Here's the terrifying truth: there are already enough known fossil fuel reserves to fry Planet Earth five times over._
 
-Bang! Of course, you still need to include that Bill McKibben reference, so you head on over to Zotero, highlight the Rolling Stone article, hit _cmd+shift+c_ (on a Mac) and then past that reference into your Markdown:
+Bang! Of course, you still need to include that Bill McKibben article, so you head on over to Zotero, highlight the Rolling Stone article, hit _cmd+shift+c_ (on a Mac) and then paste that reference into your Markdown using _cmd+v_:
 
-_Here's the terryfying truth: there are already enough known fossil fuel reserves to fry planet earth five times over @Bill_mckibben_2012._
+_Here's the terrifying truth: there are already enough known fossil fuel reserves to fry Planet Earth five times over @Bill_mckibben_2012._
 
     
 
