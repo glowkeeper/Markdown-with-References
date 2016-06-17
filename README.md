@@ -71,8 +71,8 @@ _pandoc --normalize --toc --metadata link-citations=true --filter pandoc-citepro
 
 ..._renewables.pdf_ should be a beautifully formatted PDF, complete with a table of contents, that contains the following text and reference:
 
-_Here's the terrifying truth: there are already enough known fossil fuel reserves to fry Planet Earth five times over [1][1]._
+_Here's the terrifying truth: there are already enough known fossil fuel reserves to fry Planet Earth five times over [1]._
 
-_[1]: Bill McKibben, “Global Warming’s Terrifying New Math.” http://www.rollingstone.com/politics/news/global-warmings-terrifying-new-math-20120719, Jul-2012._
+[1]: [1] Bill McKibben, “Global Warming’s Terrifying New Math.” http://www.rollingstone.com/politics/news/global-warmings-terrifying-new-math-20120719, Jul-2012.
     
 
