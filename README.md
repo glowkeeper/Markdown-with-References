@@ -1,6 +1,6 @@
 # Scrivener (Markdown) With References
 
-If you're like me, then you find yourself writing lots of academic papers. That means that it's important you use the most productive writing and referencing tools which work 
+If you find yourself writing lots of academic papers, then it's important you use writing and referencing tools that work well together. 
 
 ## A Brief Aside - Integrating Scrivener and Zotero
 
