@@ -8,14 +8,13 @@ For large works, such as [My Abi](https://glowkeeper.gitbooks.io/my-abi/content/
 
 However, I prefer to avoid having to open an additional Word Processor package, so I use another method for integrating Scrivener and Zotero, which I outline below.
 
-## An Overview of My Method
+## Markdown and BibTeX
 
 The method I am going to outline uses [Markdown](https://daringfireball.net/projects/markdown/), together with [BibTeX](http://www.bibtex.org/) formatted references, to produce beautiful LaTex inspired PDFs. I like Markdown's minimalist style because it allows me to concentrate on content without worying too much about presentation, at least while I'm busy writing.
 
 Furthermore, because the source documents I create are text files, they are perfect for version control on [GitHub](https://github.com/). That also means they are amenable to collaboration through branching, diff'ing and merging.
 
 As a small note of caution - I have only used this method on a Mac. It will certainly work on Linux, and it probably works on Windows too, but I rarely work on such systems (at least, not for writing), so I cannot vouch for them. 
-
 
 ### Dependencies
 
@@ -26,7 +25,7 @@ The tools you'll need:
 1. A Markdown Editor. [Scrivener](https://www.literatureandlatte.com/scrivener.php) is great for breaking big documents into smaller, more manageable, sections. I format my Scrivener documents as Markdown using the [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) package - here are [instructions for setting that up](http://thaddeushunt.com/tips-setting-up-scrivener-to-compile-multimarkdown/). For shorter works, I use the fuss free [Sublime Text](https://www.sublimetext.com/) editor together with the [Markdown Editing](https://github.com/SublimeText-Markdown/MarkdownEditing) package. 
 2. A reference manager that can output [BibTeX](http://www.bibtex.org/). I use [Zotero](https://www.zotero.org/). It works best with [Firefox](https://www.mozilla.org/en-GB/firefox/new/) and [Firefox's Zotero plugin](https://download.zotero.org/extension/zotero-4.0.29.10.xpi). Additionally, I use Zotero's [Better BibText](https://github.com/retorquere/zotero-better-bibtex) plugin, primarily because that helps avoid citation key clashes. 
 3. Install the swiss army knife of text formatting tools - [Pandoc](http://pandoc.org/). Pandoc is a fabulous, if somewhat complex, tool. You can get it to produce just about anything - PDFs, Word documents, and it can even turn Markdown into beautiful [reveal.js](https://github.com/hakimel/reveal.js/) inspired presentations. I won't document such uses here, but if you want to do such things, here's a link to the [documentation](http://pandoc.org/README.html).
-4. A [Citation Style Language](http://citationstyles.org/) file that matches the citation style you need. The [Zotero Style Repository](https://www.zotero.org/styles) has many such files. I often have to produce IEEE citations, for which I use the file [IEEE with URL](https://www.zotero.org/styles/ieee-with-url).
+4. A [Citation Style Language](http://citationstyles.org/) (CSL) file that matches the citation style you need. The [Zotero Style Repository](https://www.zotero.org/styles) has many such files. I often have to produce IEEE citations, for which I use the file [IEEE with URL](https://www.zotero.org/styles/ieee-with-url).
 5. A LaTex processor. The [BasicTex](http://www.tug.org/mactex/morepackages.html) package will suffice. 
 
 
@@ -42,9 +41,40 @@ Let's imagine you have to produce a paper for a conference on renewable energy. 
 
 _Here's the terrifying truth: there are already enough known fossil fuel reserves to fry Planet Earth five times over._
 
-Bang! Of course, you still need to include that Bill McKibben article, so you head on over to Zotero, highlight the Rolling Stone article, hit _cmd+shift+c_ (on a Mac) and then paste that reference into your Markdown using _cmd+v_:
+Bang! Of course, you still need to include that Bill McKibben reference, so you head on over to Zotero, highlight the Rolling Stone article, hit _cmd+shift+c_ (on a Mac) and then paste that citation into your Markdown using _cmd+v_:
 
-_Here's the terrifying truth: there are already enough known fossil fuel reserves to fry Planet Earth five times over @Bill_mckibben_2012._
+_Here's the terrifying truth: there are already enough known fossil fuel reserves to fry Planet Earth five times over @bill_mckibben_global_2012._
 
+...note the citation key _@bill_mckibben_global_2012_.
+
+Then, when you finish your document _renewables.md_, you export, into the same directory as your markdown file, your Zotero library in _Better BibTeX_ format. Callit, for example, _library.bib_. Make sure your CSL file, for example, _ieee-with-url.csl_, is also in that directory. Finally, 
+create a _meta file_, for example _meta.txt_, that contains your paper's title, the auther(s), the header and the footer. Here's my _meta.txt_:
+
+---
+title: Only Oil Executives and Their Friends in Government Believe Fracking is a Good Energy Option
+author: Steve Huckle
+header-includes:
+    - \usepackage{fancyhdr}
+    - \pagestyle{fancy}
+    - \lhead{\thepage}
+    - \chead{}
+    - \rhead{}
+    - \lfoot{© Steve Huckle}
+    - \cfoot{}
+    - \rfoot{}
+    - \renewcommand{\headrulewidth}{0.4pt}
+    - \renewcommand{\footrulewidth}{0.4pt}
+---
+
+Finally, to produce a fully referenced PDF:
+
+_pandoc --normalize --toc --metadata link-citations=true --filter pandoc-citeproc -V documentclass=report "meta.txt" "renewables.md" --biblio "library.bib" --csl "ieee-with-url.csl" --latex-engine=xelatex -s -S -o "renewables.pdf"_
+
+..._renewables.pdf_ should be a beautifully formatted PDF, complete with a table of contents, that contains the following text and reference:
+
+_Here's the terrifying truth: there are already enough known fossil fuel reserves to fry Planet Earth five times over <sup>1</sup>._
+
+_[1] Bill McKibben, “Global Warming’s Terrifying New Math.” http://www.rollingstone.com/politics/news/global-warmings-terrifying-new-math-20120719,
+Jul-2012._
     
 
