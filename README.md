@@ -1,4 +1,4 @@
-# Scrivener (Markdown) With BibTeX References Via Zotero
+# Scrivener (Markdown) With BibTeX References Using Zotero
 
 If you find yourself writing lots of academic papers, then it's important you use writing and referencing tools that work well together. 
 
