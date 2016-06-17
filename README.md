@@ -4,7 +4,7 @@ If you find yourself writing lots of academic papers, then it's important you us
 
 ## A Brief Aside - Integrating Scrivener and Zotero
 
-For large works, such as [My Abi](https://glowkeeper.gitbooks.io/my-abi/content/), I use [Scrivener](https://www.literatureandlatte.com/scrivener.php) as my word processor, together with [Zotero](https://www.zotero.org/) as my reference manager. The most well-documented method of integrating Scrivener and Zotero uses [OpenOffice](https://www.openoffice.org/) or [LibreOffice](https://www.libreoffice.org/) and the _scannable cite_ option within Zotero - [here's one such example of doing it that way](http://thedigitalresearcher.com/how-to-use-zotero-with-scrivener/). 
+For large works, such as [My Abi](https://glowkeeper.gitbooks.io/my-abi/content/), I use [Scrivener](https://www.literatureandlatte.com/scrivener.php) as my word processor, together with [Zotero](https://www.zotero.org/) as my reference manager. The most well-documented method of integrating Scrivener and Zotero also relies on [OpenOffice](https://www.openoffice.org/) or [LibreOffice](https://www.libreoffice.org/) and the _scannable cite_ option within Zotero - [here's one such example of doing it that way](http://thedigitalresearcher.com/how-to-use-zotero-with-scrivener/). 
 
 However, I prefer to avoid having to open an additional Word Processor package, so I use another method for integrating Scrivener and Zotero, which I outline below.
 
@@ -19,7 +19,7 @@ As a small note of caution - I have only used this method on a Mac. It will cert
 
 ### Dependencies
 
-Although I avoid having to use two word processing tools, my method does other dependencies. Not least of which is being comfortable using a command line. 
+Although I avoid having to use two word processing tools, my method does have other dependencies. Not least of which is being comfortable using a command line. 
 
 The tools you'll need:
 
