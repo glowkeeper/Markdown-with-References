@@ -1,4 +1,4 @@
-# Scrivener (Markdown) and References
+# Scrivener (Markdown) With References
 
 If you're like me, then you find yourself writing lots of academic papers. That means that it's important you use the most productive writing and referencing tools which work 
 
