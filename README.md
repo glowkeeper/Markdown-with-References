@@ -2,7 +2,7 @@
 
 If you find yourself writing lots of academic papers, then it's important you use writing and referencing tools that work well together. 
 
-## A Brief Aside - Integrating Scrivener and Zotero
+## A Brief Aside - Integrating Scrivener and Zotero Using OpenOffice (or LibreOffice)
 
 For large works, such as [My Abi](https://glowkeeper.gitbooks.io/my-abi/content/), I use [Scrivener](https://www.literatureandlatte.com/scrivener.php) as my word processor because it's fantastic at breaking complex works into smaller, more manageable, parts. I use [Zotero](https://www.zotero.org/) as my citations manager. The most well-documented method of integrating Scrivener and Zotero also relies on [OpenOffice](https://www.openoffice.org/) or [LibreOffice](https://www.libreoffice.org/) and the _scannable cite_ option within Zotero - [here's one such example of doing it that way](http://thedigitalresearcher.com/how-to-use-zotero-with-scrivener/). 
 
