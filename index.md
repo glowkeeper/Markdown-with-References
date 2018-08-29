@@ -79,3 +79,8 @@ _[1] Bill McKibben, “Global Warming’s Terrifying New Math.” http://www.rol
 ## Script
 
 I have created a [script](https://github.com/glowkeeper/pandoc-build) that automates much of the work detailed above. The script can even create those beautiful [reveal.js](https://github.com/hakimel/reveal.js/) inspired presentations I mentioned earlier.
+
+Copyright © Steven Huckle, 2017-2018.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="CC-BY-NC-SA 4.0 International" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
+Unless otherwise stated, the works here are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0). They are attributed to Steven Huckle. The license lets you remix, tweak, and build upon the work non-commercially, as long as you credit Steven Huckle and license your new creations under identical terms.
